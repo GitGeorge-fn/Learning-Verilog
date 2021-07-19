@@ -29,8 +29,8 @@ initial begin
      {A, B} = 4'd13; #20
      {A, B} = 4'd14; #20
      {A, B} = 4'd15; #20
-     
-    $display{"Test is complete. "}
+
+    $display("Test is complete. ");
 end
     
 endmodule
