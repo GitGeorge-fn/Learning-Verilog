@@ -10,7 +10,10 @@ greater_than uut(A, B,F);
 
 initial begin
 
-    
+    $dumpfile("greater_than_tb.vcd");
+    $dumpvars(0, greater_than_tb);
+
+     {A, B} = 4'd0;  #20
      {A, B} = 4'd1;  #20
      {A, B} = 4'd2;  #20
      {A, B} = 4'd3;  #20
@@ -26,11 +29,8 @@ initial begin
      {A, B} = 4'd13; #20
      {A, B} = 4'd14; #20
      {A, B} = 4'd15; #20
-     {A, B} = 4'd16; #20
-     {A, B} = 4'd17; #20
-     {A, B} = 4'd18; #20
-     {A, B} = 4'd19; #20
-     {A, B} = 4'd20; #20
+     
+    $display{"Test is complete. "}
 end
     
 endmodule
